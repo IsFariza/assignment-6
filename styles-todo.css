@@ -1,0 +1,24 @@
+.completed{
+    text-decoration: line-through;
+}
+
+.todo-list-main{
+    width: max-content;
+    border: 10px outset rgb(66, 69, 209);
+    border-radius: 10px;
+background-color: rgb(224, 252, 255);
+    padding: 40px;
+}
+.todolist{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(195, 238, 243);
+    height: 80vh;
+
+}
+
+html{
+    background-color: rgb(195, 238, 243);
+}

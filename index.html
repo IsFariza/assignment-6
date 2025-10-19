@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Assignment 6</title>
+</head>
+<body>
+    <div class="main">
+        <div class="first-task">
+            <p id="initial-text">Initial unchanged text.</p>
+            <button id="change-text" type="button" class="btn btn-primary">Change the Text</button>
+        </div>
+        <hr>
+         
+        <div>
+            <h3> DOM Manipulation </h3>
+            <div class="mycontainer">
+            <h4 id="heading"> Customize this Container. </h4>
+            <button type="button" class="btn btn-outline-primary " id="change-bg-color">Change bg's color</button>
+            <button type="button" class="btn btn-outline-primary" id="change-font">Change heading's font</button>
+        </div>
+
+        <div class="fourth-task">
+            <ul id="list">
+                <li>First Item</li>
+            </ul>
+
+            <button type="button" class="btn btn-outline-success" id="addItem">Add new Item</button>
+            <button type="button" class="btn btn-outline-danger" id="removeItem">Remove Item</button>
+        </div>
+        </div>
+        
+        <hr>
+        <div>
+            <h3> Events </h3>
+            <h5>Mouse Events</h5>
+            <div class="fifth-task">
+                
+                <div class="box red"></div>
+                <div class="box orange"></div>
+                <div class="box yellow"></div>
+                <div class="box green"></div>
+                <div class="box blue"></div>
+                <div class="box navyBlue"></div>
+                <div class="box purple"></div>
+            </div>
+
+            <hr>
+            <h5>Keyboard Events</h5>
+            <div class="sixth-task">
+                <input type="text" id="inputText" placeholder="Type something">
+                <p id="outputText">You're typing: </p>
+            </div>
+            <hr>
+
+
+            
+        </div>
+
+
+
+
+    </div>
+    <div class="seventh-task">
+        <h5>Form Validation</h5>
+            <div class="container">
+                <form class="row g-3" name="form" onsubmit="return validateForm()" required>
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="firstName" name="fname">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="lastName" name="lname">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control " id="email" name="email">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="passwd" class="form-label">Password</label>
+                        <input type="password" class="form-control " id="passwd" name="passwd">
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </div>
+                    
+                </form>
+                <p id="error-message" class="text-danger mt-3"></p>
+            </div>
+    </div>
+    
+    <button type="button" class="btn btn-outline-primary" onclick="window.location.href='todo-list.html' " style="margin: 20px;">Go to "To Do List" page</button>
+  <script src="script.js"></script>
+</body>
+</html>
