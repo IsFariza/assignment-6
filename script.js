@@ -1,6 +1,6 @@
 console.log("my name is Fariza");
 console.log("my group is SE-2436");
-// alert("Hello, JavaScript World!");
+alert("Hello, JavaScript World!");
 
 var myName = "Fariza";
 var myBirthYear = 2006;
@@ -119,6 +119,7 @@ function validateForm() {
     return false;
   }
 }
+
 
 
 
